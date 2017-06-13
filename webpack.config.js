@@ -4,7 +4,7 @@ const webpack = require('webpack');
 module.exports = {
   entry: {
     main: path.join(__dirname, 'src/index.js'),
-    vendor: 'react'
+    vendor: ['react', 'jquery']
   },
   output: {
     path: path.join(__dirname, 'build'),
