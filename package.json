@@ -1,0 +1,27 @@
+{
+  "name": "code-splitting-webpack",
+  "version": "1.0.0",
+  "description": "Use webpack to split code",
+  "main": "server.js",
+  "scripts": {
+    "build": "webpack",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NhanNguyenThien/code-splitting-webpack.git"
+  },
+  "author": "Nhan Nguyen Thien",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NhanNguyenThien/code-splitting-webpack/issues"
+  },
+  "homepage": "https://github.com/NhanNguyenThien/code-splitting-webpack#readme",
+  "dependencies": {
+    "path": "^0.12.7",
+    "react": "^15.5.4"
+  },
+  "devDependencies": {
+    "webpack": "^2.6.1"
+  }
+}
