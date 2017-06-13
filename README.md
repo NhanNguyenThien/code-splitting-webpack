@@ -7,3 +7,7 @@ npm init
 # install dependencies
 npm install webpack --save-dev
 npm install path --save
+# setting up webpack config
+# create entry file
+# run webpack on terminal
+webpack
