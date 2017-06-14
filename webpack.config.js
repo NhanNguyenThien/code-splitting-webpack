@@ -5,8 +5,8 @@ const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPl
 module.exports = {
   // tells webpack where to begin
   entry: {
-    app1: path.join(__dirname, 'src/app1.js'),
-    app2: path.join(__dirname, 'src/app2.js')
+    main: path.join(__dirname, 'src/entry1.js'),
+    entry2: path.join(__dirname, 'src/entry2.js')
   },
   output: {
     path: path.join(__dirname, 'build'),
@@ -16,14 +16,14 @@ module.exports = {
     // extract the node_modules to a bundle named vendor
     new webpack.optimize.CommonsChunkPlugin({
       name: 'vendor1',
-      chunks: ['app1'],
+      chunks: ['main'],
       minChunks: (module, count) => (
         module.resource && module.resource.indexOf('node_modules') >= 0
       )
     }),
     new webpack.optimize.CommonsChunkPlugin({
       name: 'vendor2',
-      chunks: ['app2'],
+      chunks: ['entry2'],
       minChunks: (module, count) => (
         module.resource && module.resource.indexOf('node_modules') >= 0
       )
